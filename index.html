@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Converters</title>
+</head>
+<body>
+    <h1 class="heading">
+        <i class="fas fa-balance-scale-right"></i>
+        Online Units Converters
+    </h1>
+    <div class="input-field hidden" id="speed-input">
+            <i class="fas fa-times-circle"></i>
+            <input type="text" name="speed-in" id="speed-in" placeholder="Speed Input">
+            <select name="speed_input_unit" id="speed_input_unit">
+                <option value="ms">m/s</option>
+                <option value="kmh">km/h</option>
+            </select>
+            <br>
+            <p class="out-text">OUTPUT</p>
+            <select name="speed_output_unit" id="speed_output_unit">
+                <option value="ms">m/s</option>
+                <option value="kmh">km/h</option>
+            </select>
+            <p class="out-text speed-output"></p>
+    </div>
+    <!-- bootstrap grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col" id="speed">
+                <div>
+                    <i class="fas fa-tachometer-alt icons"></i><br>
+                    <p>Speed</p>
+                </div>
+            </div>
+            <div class="col time">
+                <i class="far fa-clock icons"></i><br>
+                <p>Time</p>
+            </div>
+            <div class="col length">
+                <i class="fas fa-ruler icons"></i><br>
+                <p>Length</p>
+            </div>
+        </div>
+    </div>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/68ba29e07e.js" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- local js -->
+    <script src="script.js"></script>
+</body>
+</html>
